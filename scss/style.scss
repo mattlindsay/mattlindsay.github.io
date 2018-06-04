@@ -1,0 +1,15 @@
+// STYLES
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    & img {
+        max-height: 204px;
+    }
+}
+
+h1 { }
