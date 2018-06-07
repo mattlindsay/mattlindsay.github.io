@@ -5,3 +5,10 @@ body {
 
 header img {
   max-height: 204px; }
+
+main {
+  padding-bottom: 4rem; }
+
+footer {
+  padding: 3rem;
+  background-color: whitesmoke; }
