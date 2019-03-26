@@ -6,7 +6,8 @@ body {
   font-family: 'Questrial', sans-serif;
   text-align: center;
   color: #333;
-  height: 100vh; }
+  height: 100vh;
+  background-color: black; }
 
 a {
   text-decoration: none;
@@ -14,8 +15,11 @@ a {
   a:visited {
     color: black; }
 
-header img {
-  max-height: 204px; }
+header {
+  padding: 3rem;
+  background-color: white; }
+  header img {
+    max-height: 150px; }
 
 main {
   border-top: 1px solid black; }

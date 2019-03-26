@@ -12,6 +12,7 @@ body {
     text-align: center;
     color: #333;
     height: 100vh;
+    background-color: black;
 }
 
 a {
@@ -25,8 +26,11 @@ a {
 
 header {
     & img {
-        max-height: 204px;
+        max-height: 150px;
     }
+    
+    padding: 3rem;
+    background-color: white;
 }
 
 main {
@@ -66,6 +70,7 @@ footer {
     border-bottom: 1px solid black;
     
     font-size: 1.15em;
+
     
     & a {
         display: flex;
