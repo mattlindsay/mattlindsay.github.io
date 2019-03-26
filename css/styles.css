@@ -4,6 +4,7 @@ body, html {
 
 body {
   font-family: 'Questrial', sans-serif;
+  font-size: 1.025rem;
   text-align: center;
   color: #333;
   height: 100vh;
@@ -34,7 +35,6 @@ main {
       justify-content: center;
       align-items: center;
       padding: 3rem;
-      font-size: 1.15em;
       line-height: 1;
       cursor: pointer;
       transition: all .3s ease; }
@@ -43,8 +43,7 @@ main {
 
 footer {
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  font-size: 1.15em; }
+  border-bottom: 1px solid black; }
   footer a {
     display: flex;
     justify-content: center;
