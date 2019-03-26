@@ -16,13 +16,8 @@ body {
     background-color: black;
 }
 
-a {
-        text-decoration: none;
-        color: black;
-        
-        &:visited {
-            color: black;
-        }
+a { 
+    text-decoration: none;
     }
 
 header {
@@ -45,17 +40,19 @@ main {
         background-color: black;
         
         & .item a {
+            color: #333;
             background-color: #f5f5f5;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 3rem;
-            //color: #666;
+            
             line-height: 1;
             cursor: pointer;
             transition: all .3s ease;
             
             &:hover {
+                color: black;
                 background-color: white;
             }
         }
@@ -66,20 +63,21 @@ main {
 h1 { }
 
 footer {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-
     
-    & a {
+    display: grid;
+    
+     a {
+        color: #757575;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 3rem;
-        background-color: #f5f5f5;
+        
         transition: all .3s ease;
         
         &:hover {
-            background-color: white;
+           color: white;
+            background-color: #111;
         }
     }
 
