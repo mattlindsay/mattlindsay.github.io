@@ -5,10 +5,15 @@ body,html {
   margin: 0;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 
 body {
     //font-family: sans-serif;
     font-family: 'Questrial', sans-serif;
+    font-weight: 200;
     font-size: 1.025rem;
     text-align: center;
     color: #333;
