@@ -15,7 +15,6 @@
             background-repeat: repeat-x;
             margin: 0px;
             height: 100%;
-            overflow: hidden;
         }
         #lottie{
             background-color:#082056;
@@ -70,25 +69,63 @@
         }
         
         form.sign-up label {
+            cursor: pointer;
             color: #24A39B;
-            display: block;
+            display: inline-block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
         }
         
         form .pill-danger {
             text-align: center;
             background-color: #bd5a3d;
             border-radius: 3px;
+            margin-bottom: 0.5rem;
+        }
+        
+        form p {
+            margin-top: 0.5rem
         }
         
         form button.btn {
+            cursor: pointer;
+            font-size: 0.85rem;
             padding: 1rem 2rem;
             border-radius: 3px;
             text-transform: uppercase;
+            color: #24A39B;
+            background-color: #091b44;
+            border: 0;
+            margin-left: 10px;
+            font-weight: 600;
+            
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        form button.btn:hover {
+            color: #fff;
+            background-color: #24A39B;
+            -webkit-box-shadow: 0 10px 60px 0 rgba(0,0,0,0.8);
+            box-shadow: 0 10px 60px 0 rgba(0,0,0,0.8);
         }
         
         form input.text-field {
-            padding: 0.9rem 16px;
-            width: 72%
+            font-size: 1rem;
+            border-radius: 3px;
+            padding: 0.8rem 16px;
+            width: 390px;
+            color: #24A39B;
+            background-color: #091b44;
+            border: 1px solid #255163;
+            border-radius: 4px;
+        }
+        
+        form ::placeholder {
+            color: #24A39B;
         }
         
         footer .wrap {
@@ -130,8 +167,9 @@
         <div id="Errortext" class="pill-danger" style="display: none;">You need to check the box above to receive updates</div>
         <input class="text-field" type="email" placeholder="Enter your email address" required>
         <button type="submit" class="btn btn-default">Sign up</button>
+        <p>By checking the box above I agree to the <a href="#">pivacy agreement</a></p>
     </form>
-    <p>By checking the box above I agree to the <a href="#">pivacy agreement</a></p>
+    
     
     
     

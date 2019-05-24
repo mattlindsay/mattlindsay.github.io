@@ -1,0 +1,1 @@
+var anim=lottie.loadAnimation({container:document.getElementById("lottie"),renderer:"svg",loop:!0,autoplay:!0,path:"data.json"});anim.addEventListener("DOMLoaded",function(e){anim.playSegments([[0,59],[60,94],[95,239]],!0)});
