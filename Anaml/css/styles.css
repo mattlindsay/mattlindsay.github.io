@@ -25,7 +25,7 @@ body {
   margin-bottom: 2.5rem; }
 
 main {
-  width: 525px;
+  max-width: 525px;
   margin: 0 auto;
   padding-top: 2rem;
   background-color: #082056; }
@@ -79,13 +79,15 @@ form .pill-danger {
   font-size: 0.75rem;
   font-weight: 400;
   text-align: center;
-  line-height: 25px;
+  line-height: 1rem;
+  padding: 5px 30px;
   background-color: #CB5333;
   border-radius: 3px;
   margin: 0.35rem 0 1rem 0; }
 
 form p {
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  line-height: 1rem; }
 
 form button.btn {
   cursor: pointer;
@@ -190,3 +192,25 @@ footer .sm-logo {
 footer p {
   line-height: 0.5rem;
   margin: 0; }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    overflow: hidden; }
+  body {
+    overflow-x: hidden; }
+  main, footer .wrap {
+    padding: 25px 25px 0; }
+  #lottie {
+    width: auto; }
+  form button.btn {
+    width: 100%;
+    margin-left: 0;
+    color: #fff;
+    background-color: #24A39B; }
+  form input.text-field {
+    width: 100%;
+    margin-bottom: 0.5rem; } }
