@@ -2,147 +2,11 @@
 <meta charset="UTF-8">
 <head>
     <style>
-        body{
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 0.04rem;
-            line-height: 1.85rem;
-            color: aliceblue;
-            background-color:#082056;
-            background-image: url(assets/Tile.png);
-            background-position: top center;
-            background-repeat: repeat-x;
-            margin: 0px;
-            height: 100%;
-        }
-        #lottie{
-            background-color:#082056;
-            width:330px;
-            height:225px;
-            display:block;
-            overflow: hidden;
-            transform: translate3d(0,0,0);
-            text-align: center;
-            opacity: 1;
-            margin-bottom: 2.5rem;
-        }
         
-        main {
-            width: 525px;
-            margin: 0 auto;
-            padding-top: 1rem;
-            background-color:#082056;
-        }
-        
-        h2 {
-            color: #3F97F4;
-            font-size: 1.25rem;
-            text-transform: uppercase;
-            letter-spacing: 0.85rem;
-        }
-        
-        p.intro {
-            font-size: 1.15rem;
-            font-weight: 200
-        }
-        
-        h1.logo {
-            /*color: red;*/
-            width: 140px;
-            height: 36px;
-            background-image: url(assets/Logo.svg);
-            margin-bottom: 3rem;
-        }
-        
-        h1.logo span {
-           /* color: transparent; */
-            opacity: 0;
-        }
-        
-        a {
-            color: #24A39B;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        form.sign-up label {
-            cursor: pointer;
-            color: #24A39B;
-            display: inline-block;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        form .pill-danger {
-            text-align: center;
-            background-color: #bd5a3d;
-            border-radius: 3px;
-            margin-bottom: 0.5rem;
-        }
-        
-        form p {
-            margin-top: 0.5rem
-        }
-        
-        form button.btn {
-            cursor: pointer;
-            font-size: 0.85rem;
-            padding: 1rem 2rem;
-            border-radius: 3px;
-            text-transform: uppercase;
-            color: #24A39B;
-            background-color: #091b44;
-            border: 0;
-            margin-left: 10px;
-            font-weight: 600;
-            
-            -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-            -ms-transition: all 0.2s ease-in-out;
-            -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-        }
-        
-        form button.btn:hover {
-            color: #fff;
-            background-color: #24A39B;
-            -webkit-box-shadow: 0 10px 60px 0 rgba(0,0,0,0.8);
-            box-shadow: 0 10px 60px 0 rgba(0,0,0,0.8);
-        }
-        
-        form input.text-field {
-            font-size: 1rem;
-            border-radius: 3px;
-            padding: 0.8rem 16px;
-            width: 390px;
-            color: #24A39B;
-            background-color: #091b44;
-            border: 1px solid #255163;
-            border-radius: 4px;
-        }
-        
-        form ::placeholder {
-            color: #24A39B;
-        }
-        
-        footer .wrap {
-            width: 525px;
-            margin: 0 auto;
-        }
-        
-        footer .sm-logo {
-            margin: 1rem 0;
-        }
-        
-        footer p {
-            line-height: 0.5rem;
-            margin: 0;
-        }
 
     </style>
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,800&display=swap" rel="stylesheet">
     
@@ -160,20 +24,17 @@
     <p class="intro">Anaml is analytics &amp; machine learning delivered at scale. Real copy to come. Bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
     
     <form class="sign-up">
-        <label for="formCheck" onclick="formValidation()">
-            <input type="checkbox" id="formCheck"  checked>
+        <div class="custom-check" onclick="formValidation()">
+        <input type="checkbox" id="formCheck" checked>
+        <label for="formCheck">
             Sign up to receive updates
         </label>
+        </div>
         <div id="Errortext" class="pill-danger" style="display: none;">You need to check the box above to receive updates</div>
         <input class="text-field" type="email" placeholder="Enter your email address" required>
         <button type="submit" class="btn btn-default">Sign up</button>
-        <p>By checking the box above I agree to the <a href="#">pivacy agreement</a></p>
+        <p class="small">By checking the box above I agree to the <a href="#">pivacy agreement</a></p>
     </form>
-    
-    
-    
-    
-    
     
 </main>
     
