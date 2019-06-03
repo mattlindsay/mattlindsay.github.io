@@ -1,4 +1,11 @@
+html,
 body {
+  height: 100%; }
+
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 1fr 1fr 1fr;
   font-family: 'Work Sans', sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
@@ -7,15 +14,11 @@ body {
   line-height: 1.75rem;
   color: aliceblue;
   background-color: #082056;
-  background-image: url(../assets/Tile.png);
-  background-position: top center;
-  background-repeat: repeat-x;
-  margin: 0px;
-  height: 100%; }
+  margin: 0px; }
 
 #lottie {
   background-color: #082056;
-  width: 330px;
+  max-width: 330px;
   height: 225px;
   display: block;
   overflow: hidden;
@@ -24,11 +27,25 @@ body {
   opacity: 1;
   margin-bottom: 2.5rem; }
 
+header {
+  display: grid;
+  align-content: end; }
+  header .wrap {
+    padding-top: 2rem;
+    max-width: 525px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #082056; }
+
 main {
-  max-width: 525px;
-  margin: 0 auto;
-  padding-top: 2rem;
-  background-color: #082056; }
+  padding-top: 0.5rem;
+  background-image: url(../assets/Tile-Main.png);
+  background-position: top center;
+  background-repeat: repeat-x; }
+  main .wrap {
+    max-width: 525px;
+    margin: 0 auto;
+    background-color: #082056; }
 
 h2 {
   color: white;
@@ -180,7 +197,8 @@ form .custom-check label::after {
   background-color: #24A39B; }
 
 footer {
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  width: 100%; }
 
 footer .wrap {
   width: 525px;
@@ -197,15 +215,23 @@ footer p {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 120px) and (max-width: 480px) {
   html {
-    overflow: hidden; }
-  body {
     overflow-x: hidden; }
-  main, footer .wrap {
-    padding: 25px 25px 0; }
+  body {
+    display: block; }
+  header .wrap {
+    width: 100%;
+    max-width: 320px; }
+  footer {
+    overflow-x: hidden; }
+  main .wrap, footer .wrap, header .wrap {
+    padding: 10px 25px; }
+  header .wrap .logo {
+    margin-bottom: 0; }
   #lottie {
-    width: auto; }
+    width: 100%;
+    min-width: 320px; }
   form button.btn {
     width: 100%;
     margin-left: 0;
