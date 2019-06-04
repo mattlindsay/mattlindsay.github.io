@@ -256,6 +256,8 @@ footer p {
     margin: 0; }
   main {
     min-width: 320px; }
+  #lottie {
+    margin-bottom: 1rem; }
   footer {
     overflow-x: hidden;
     min-width: 320px;
