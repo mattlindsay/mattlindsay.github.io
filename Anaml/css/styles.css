@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box; }
+
 html {
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 html,
 body {
@@ -208,6 +211,7 @@ footer {
 footer .wrap {
   margin: 0 auto;
   width: 525px;
+  max-width: 100%;
   height: 60px;
   padding-top: 1rem;
   border-top: 1px solid #2e406d; }
@@ -228,11 +232,13 @@ footer p {
 }
 
 */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) and (min-width: 481px) {
   body {
     display: block; }
   .wrap {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  form input.text-field {
+    width: 305px; } }
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -242,7 +248,8 @@ footer p {
   html {
     overflow-x: hidden; }
   body {
-    display: block; }
+    display: block;
+    max-width: 100%; }
   header .wrap {
     width: 100%;
     max-width: 320px;
@@ -250,13 +257,18 @@ footer p {
   main {
     min-width: 320px; }
   footer {
-    overflow-x: hidden; }
-  main .wrap, footer .wrap, header .wrap {
+    overflow-x: hidden;
+    min-width: 320px;
+    width: 80%;
+    margin: 0 auto; }
+    footer .wrap {
+      padding: 10px 0; }
+  main .wrap, header .wrap {
     padding: 10px 25px; }
   header .wrap .logo {
     margin-bottom: 0; }
   #lottie {
-    width: 100%; }
+    width: 90%; }
   form button.btn {
     width: 100%;
     margin-left: 0;

@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-    overflow-y: scroll;
+   // overflow-y: scroll;
     overflow-x: hidden;
+    height: 100%;
 }
 
 html,
@@ -278,6 +283,7 @@ footer {
 footer .wrap {
     margin: 0 auto;
     width: 525px;
+    max-width: 100%;
     height: 60px;
     padding-top: 1rem;
     border-top: 1px solid #2e406d;
@@ -307,13 +313,19 @@ footer p {
 
 // MEDIA QUERIES FIRST BREAKPOINT
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) and (min-width: 481px) {
     
     body {
         display: block;
     }
     .wrap {
         padding: 0 20px;
+    }
+    
+    form {
+        input.text-field {
+            width: 305px;
+        }
     }
 }
 
@@ -335,8 +347,8 @@ footer p {
     
     body {
         display: block;
-      //  overflow-x: hidden;
-       // max-width: 100%;
+       // overflow-x: hidden;
+        max-width: 100%;
         
     }
     
@@ -352,9 +364,16 @@ footer p {
     
     footer {
         overflow-x: hidden;
+        min-width: 320px;
+        width: 80%;
+        margin: 0 auto;
+        
+        .wrap {
+            padding: 10px 0;
+        }
     }
   
-  main .wrap, footer .wrap, header .wrap {
+  main .wrap, header .wrap {
             padding: 10px 25px;
         }
     
@@ -363,7 +382,7 @@ footer p {
     }
     
     #lottie {
-        width: 100%;
+        width: 90%;
        // min-width: 320px;
     }
     
